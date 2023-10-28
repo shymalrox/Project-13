@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <script>
+            /*LeetCode Task:
+            Given an object or an array, return if it is empty*/
+            
+
+            //create an object
+            obj = {"a": 20, "b": 36, "c": 19}
+
+            /*create function that states if the object length is 0 then
+            the output will be true, and if the object length is not 0 then 
+            the output will be false*/
+            let isEmpty = function(obj) {
+                if(Object.entries(obj).length === 0) {
+                    return true
+                } else {
+                    return false
+                }
+            };
+
+            //if object is empty output will be true, if object is not empty output will be false
+            console.log(isEmpty(obj))
+            
+        </script>
+    </body>
+</html>
