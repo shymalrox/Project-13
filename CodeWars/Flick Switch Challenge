@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <script>
+            /*CodeWars Task: 
+            Create a function that always returns true for every item in a given list. 
+            However, if an element is the word "flick", switch to always returning the 
+            opposite boolean value.*/
+
+
+            //create array containing random words including "flick"
+            let myArray = ["swish", "ping", "flick", "ring", "flick", "jingle"]
+
+            //create function that sets words to true, then switches the word "flick" to false
+            function flickSwitch(words) {
+                let isTrue = true;
+                return words.map(function(word) {
+                    if (word === "flick") {
+                        isTrue = !isTrue;
+                    }
+                    return isTrue;
+                });
+            }
+            
+            console.log(flickSwitch(myArray))
+
+        </script>
+    </body>
+</html>
